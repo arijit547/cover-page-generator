@@ -1,0 +1,60 @@
+.sections {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.block {
+  margin-bottom: 1.5rem;
+}
+
+.blockTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--uni-primary, #C9A227);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--uni-primary, #C9A227);
+}
+
+.field {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0.15rem 0;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: var(--uni-text, #111111);
+}
+
+.draggable {
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.draggable:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.label {
+  font-weight: 700;
+}
+
+.value {
+  font-weight: 400;
+}
+
+.placeholder {
+  font-style: italic;
+  opacity: 0.55;
+}
+
+.blankLine {
+  display: block;
+  height: 1.25rem;
+  margin: 0.15rem 0 0.35rem;
+}

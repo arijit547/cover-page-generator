@@ -1,0 +1,32 @@
+.wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.value {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.range {
+  width: 100%;
+  accent-color: #C9A227;
+  cursor: pointer;
+}

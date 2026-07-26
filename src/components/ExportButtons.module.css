@@ -1,0 +1,70 @@
+.wrapper {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+  border: none;
+}
+
+.btnPrimary:hover:not(:disabled),
+.btnSecondary:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.btnPrimary {
+  color: #fff;
+  background: linear-gradient(180deg, rgba(201, 162, 39, 0.6), rgba(201, 162, 39, 0.8));
+  box-shadow:
+    0 10px 20px rgba(201, 162, 39, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5),
+    inset 0 -8px 20px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.btnSecondary {
+  color: #111;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6));
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),
+    inset 0 -8px 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.btnPrimary:disabled,
+.btnSecondary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.hint {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ddd;
+  margin: 0.75rem 0 0;
+}
+
+.status {
+  font-size: 0.85rem;
+  color: #C9A227;
+  font-weight: 800;
+  margin: 0.5rem 0 0;
+}

@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --a4-width: 210mm;
+  --a4-height: 297mm;
+  --uni-primary: #C9A227;
+  --uni-accent: #E6007E;
+  --uni-text: #111111;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/background_landing_page.jpg') center/cover no-repeat fixed;
+  color: #111;
+  line-height: 1.5;
+}
+
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root > nav + * {
+  flex: 1;
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}

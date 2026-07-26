@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.scaleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  padding: 0.5rem;
+}
+
+.preview {
+  width: 210mm;
+  height: 297mm;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .preview {
+    transform: scale(0.55);
+    transform-origin: top center;
+    margin-bottom: -130mm;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview {
+    transform: scale(0.42);
+    margin-bottom: -170mm;
+  }
+}
