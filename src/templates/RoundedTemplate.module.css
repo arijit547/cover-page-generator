@@ -52,6 +52,10 @@
 }
 
 .line {
+  display: grid;
+  grid-template-columns: 8.75rem auto minmax(0, 1fr);
+  column-gap: 0.2rem;
+  align-items: baseline;
   margin: 0;
   text-align: left;
 }
@@ -70,11 +74,17 @@
   cursor: grabbing;
 }
 
-.line strong {
+.lineLabel {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.colon {
   font-weight: 700;
 }
 
 .placeholder {
+  min-width: 0;
   opacity: 0.5;
   font-style: italic;
 }
@@ -106,6 +116,10 @@
 }
 
 .field {
+  display: grid;
+  grid-template-columns: 7.6rem auto minmax(0, 1fr);
+  column-gap: 0.2rem;
+  align-items: baseline;
   margin: 0 0 0.5rem;
   font-size: 1.15rem;
   line-height: 1.4;
@@ -128,13 +142,13 @@
 }
 
 .label {
-  display: inline-block;
-  min-width: 90px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .value {
   font-weight: 400;
+  min-width: 0;
 }
 
 .blankLine {

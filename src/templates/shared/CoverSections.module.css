@@ -19,6 +19,10 @@
 }
 
 .field {
+  display: grid;
+  grid-template-columns: 6.9rem auto minmax(0, 1fr);
+  column-gap: 0.2rem;
+  align-items: baseline;
   margin: 0 0 0.35rem;
   font-size: 0.95rem;
   line-height: 1.4;
@@ -42,13 +46,20 @@
 
 .label {
   font-weight: 700;
+  white-space: nowrap;
+}
+
+.colon {
+  font-weight: 700;
 }
 
 .value {
   font-weight: 400;
+  min-width: 0;
 }
 
 .placeholder {
+  min-width: 0;
   font-style: italic;
   opacity: 0.55;
 }

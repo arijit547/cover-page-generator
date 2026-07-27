@@ -20,7 +20,8 @@ function Field({ id, label, value, placeholder, lineCount = 0, isDraggable, onDr
         onDragOver={isDraggable ? onDragOver : undefined}
         onDrop={isDraggable ? (e) => onDrop(e, id) : undefined}
       >
-        <span className={styles.label}>{label}:</span>{' '}
+        <span className={styles.label}>{label}</span>
+        <span className={styles.colon}>:</span>
         <span className={isPlaceholder ? styles.placeholder : styles.value} data-export-placeholder={isPlaceholder || undefined}>
           {display}
         </span>
